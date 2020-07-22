@@ -16,14 +16,15 @@ campoDigitacao.on("input", function () {
 
 /* Reduzindo tempo */
 var tempoRestante = $("#tempo-digitacao").text()
-campoDigitacao.on("focus", function () {
-    setInterval(function () {
+campoDigitacao.one("focus", function () {
+    var cronometroID = setInterval(function () {
         tempoRestante--;
         $("#tempo-digitacao").text(tempoRestante);
 
         /* Desabilitar campo quando o tempo acabar */
         if (tempoRestante < 1) {
             campoDigitacao.attr("disabled", true);
+            clearInterval(cronometroID);
         }
 
 
