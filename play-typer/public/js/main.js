@@ -12,9 +12,11 @@ campo.on("input", function () {
 
     var quantidadeCaracteres = conteudo.length;
     $("#contador-caracteres").text(quantidadeCaracteres);
-
-
 })
+
+campo.on("focus", function(){
+
+});
 
 
 
