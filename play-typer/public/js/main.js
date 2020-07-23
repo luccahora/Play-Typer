@@ -26,7 +26,5 @@ campoDigitacao.one("focus", function () {
             campoDigitacao.attr("disabled", true);
             clearInterval(cronometroID);
         }
-
-
     }, 1000);
 });
