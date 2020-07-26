@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <title>Alura Typer</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <h1>Play Typer</h1>
-    <p class="frase">Esta frase tem belas palavras banana.</p>
+    <div class="container">
+        <h1 class="center">Play Typer</h1>
+        <p class="frase center">Esta frase tem belas palavras banana.</p>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-frase"></span> palavras</li>
-        <li><span id="tempo-digitacao">10</span> segundos</li>
-    </ul>
+        <ul class="informacoes center">
+            <li><span id="tamanho-frase"></span> palavras</li>
+            <li><span id="tempo-digitacao">10</span> segundos</li>
+        </ul>
 
-    <textarea class="campo-digitacao" cols="40" rows="5"></textarea>
-    <button id="botao-reiniciar">Reiniciar Jogo</button>
+        <textarea class="campo-digitacao" cols="40" rows="5"></textarea>
+        <button id="botao-reiniciar">Reiniciar Jogo</button>
 
-    <ul>
-        <li><span id="contador-caracteres">0</span> caracteres</li>
-        <li><span id="contador-palavras">0</span> palavras</li>
-    </ul>
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
