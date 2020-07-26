@@ -12,7 +12,7 @@ function atualizaTamanhoFrase() {
     var numeroPalavras = frase.split(" ").length;
     var tamanhoFrase = $("#tamanho-frase");
     tamanhoFrase.text(numeroPalavras);
-}   
+}
 
 var campoDigitacao = $(".campo-digitacao");
 function inicializaContadores() {
@@ -39,6 +39,7 @@ function inicializaCronometro() {
             if (tempoRestante < 1) {
                 campoDigitacao.attr("disabled", true);
                 clearInterval(cronometroID);
+                campoDigitacao.addClass("campo-desativado");
             }
         }, 1000);
     });
